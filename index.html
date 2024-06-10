@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<audio id="audioPlayer" loop>
+    <source src="themesong.mp3" type="audio/mpeg">
+</audio>
+
+<!-- An invisible button to trigger audio playback -->
+<button id="playButton" style="display: none;" onclick="playAudio()">Play Audio</button>
+
+<div id="scoreboard">
+    Score: <span id="score">0</span>
+</div>
+<canvas width="320" height="640" id="game"></canvas>
+<div id="menu" style="display: none;">
+    <h2>Game Paused</h2>
+    <p>Resume the game by pressing the "P" key again.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
